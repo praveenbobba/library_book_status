@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<title>Home Page</title>
+</head>
+
+<body>
+
+<?php
+$_SESSION["counter"] = 0 ; //------------ for counting no of books
+?>
+
+<div id="nitc" >
+  <p1 id="header" >NITC Library</p2>
+</div>
+
+<!--
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h2>NITC Libraray</h2>            
+      </div>
+    </div>
+-->
+
+<!-- homepage and admin page links-->
+  <div class="container" >
+	<ul class="nav nav-pills">
+	   <li id="menu_bar"><a href="index.html">Home</a></li>
+	   <li id="menu_bar"><a href="admin.php">Admin</a></li>
+	</ul>
+  </div>
+
+ <h1>Welcome</h1>
+ 
+<!-- for scanning the roll no of a student -->
+<div class="container">
+ <div class="row">
+  <div id="para" class="col-md-7">
+	<p>This website is developed assuming the scanner input to be in enter mode </p></br>
+  </div>
+  <div class="col-md-5">
+    <div class="container-fluid" >
+	<form  method="post" action="get_rollno.php" role="form" >
+		<label class="container-fluid">Roll No:</label>
+	 	<div class="form-group">
+		  <div class="col-xs-10">
+			
+			<input type="text" name="roll" id="rollno" placeholder="Enter Student Roll Number" autofocus class="form-control">
+		  </div></br>
+		</div></br>
+	    <div class="container-fluid">
+	     <button type="submit" class="btn btn-primary ">Submit</button>
+	     </div>	
+	</form>
+     </div>
+
+ </div>
+</div>
+</div>
+
+<div style="text-align:center; margin-top:20%">
+ <p>copyright</p>
+<div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

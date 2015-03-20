@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Books</title>
+</head>
+
+<body>
+<h1>Books Backup</h1>
+<form action="taken2.php" method="post">
+Book No: <input type="text" name="book"></br>
+<input type="submit" value="Taken">
+</form>
+
+</body>
+</html>

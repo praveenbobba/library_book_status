@@ -1,0 +1,7 @@
+'SELECT DISTINCT ROLL_NO FROM BOOKS_TAKEN;' //---------- FOR DISTINCT stundents
+
+SELECT COUNT(DISTINCT ROLL_NO) FROM BOOKS_TAKEN; //------------ counting distinct stundents
+
+SELECT * FROM BOOKS_TAKEN WHERE TAKEN_DATE LIKE '%2014-11-12%';  //-------------- finding stundents in particular date using  SUBSTRING MATCH
+
+
