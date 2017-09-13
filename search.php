@@ -62,8 +62,8 @@ echo $rollno."<br>" ;
 echo $from_date."<br>" ;
 echo $to_date."<br>" ; */
 
-$dbhost = 'localhost:3036' ;
-$dbuser = 'root';
+$dbhost = 'sql105.epizy.com' ;
+$dbuser = 'epiz_20683779';
 $dbpass = 'praveens22222';
 
 //connecting to the database
@@ -74,7 +74,7 @@ if(! $conn)
 	die("could not connect to the database server : " . mysql_error());
 }
 
-mysql_select_db('LIBRARY');   //------------- selecting the LIBRARY database
+mysql_select_db('epiz_20683779_books');   //------------- selecting the LIBRARY database
 
 //------------------ all queries-----------
 
